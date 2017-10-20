@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>php_backend</title>
+  <link rel="icon" href="https://www.codester.com/static/uploads/categories/10/icon.png">
+
+  <!-- stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- javscript-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/users/show_users.js" charset="utf-8"></script>
+  <script src="js/users/delete_user.js" charset="utf-8"></script>
+  <script src="js/users/create_user.js" charset="utf-8"></script>
+  <script src="js/users/users.js" charset="utf-8"></script>
+</head>
+
+<body class="container">
+  <div class="jumbotron">
+    <h1>Manage Users</h1>
+    <p class="alert alert-danger">WARNING - DO NOT DEPLOY!!!</p>
+  </div>
+  <input id="user_name" class="form-control" type="text">
+  <input id="user_password" class="form-control" type="text">
+
+  <button id="create_user" class="btn btn-primary">create user</button>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>User_id</th>
+    <th>Username</th>
+    <th>User password</th>
+    <th>Role</th>
+    <th>edit</th>
+    <th>delete</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+</body>
+
+</html>
