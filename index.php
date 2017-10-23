@@ -37,7 +37,7 @@
     <p>you are logged in!</p>
     <button id="logout">logout</button>
     // now show only logged in stuff!
-    <a href="page2.php">go to page 2</a>
+    <a href="dummyUsers.php">go to Films</a>
   </div>
 </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nam et rem, aspernatur accusantium fugit dolorum itaque adipisci dolore vero, eos facere ullam, expedita totam fuga ad ea aperiam harum.</p>
