@@ -29,6 +29,17 @@
   <div id="outside">
     <input type="text" id="username" value="bertie" placeholder="enter username">
     <input type="password" id="password" placeholder="enter password">
+    <!-- TODO In between this will need work, but rough is below... -->
+    <form action="/action_page.php">
+      <select name="role">
+        <option value="admin">admin</option>
+        <option value="contributor">contributor</option>
+        <option value="guest">guest</option>
+      </select>
+      <br><br>
+      <input type="role" id="role">
+    </form>
+    <!--  -->
 
     <button type="submit" id="login">login</button>
     <div id="message"></div>
@@ -37,7 +48,8 @@
     <p>you are logged in!</p>
     <button id="logout">logout</button>
     // now show only logged in stuff!
-    <a href="dummyUsers.php">go to Films</a>
+     <a href="users.php">Go to Country Risks</a>
+     <!--need to change file, unsure if users, countryrisks or create another file etc.. -->
   </div>
 </div>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nam et rem, aspernatur accusantium fugit dolorum itaque adipisci dolore vero, eos facere ullam, expedita totam fuga ad ea aperiam harum.</p>
