@@ -14,21 +14,19 @@ if (!$_SESSION['logged_in']){
   </div>
 
   <div>
-  <input id="user_name" class="form-control" type="text">
-  <input id="user_password" class="form-control" type="text">
-  <button id="create_user" class="btn btn-primary">create user</button>
-</div>
+    <input id="user_name" class="form-control" type="text">
+    <input id="user_password" class="form-control" type="text">
+    <button id="create_user" class="btn btn-success">create user</button>
+  </div>
 
 <table class="table">
   <thead>
   <tr>
-    <th>User_id</th>
+    <th>User Id</th>
     <th>Username</th>
-    <th>User password</th>
     <th>Role</th>
     <th>edit</th>
     <th>delete</th>
-    <th></th>
   </tr>
   </thead>
   <tbody>

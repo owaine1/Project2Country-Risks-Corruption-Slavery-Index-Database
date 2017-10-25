@@ -25,26 +25,41 @@ function show_user(data){
     tr.append(td); // add td to row
 
     var td = $('<td>'); //make first td
-    td.text(data[counter].user_password); // add name of db
-    tr.append(td); // add td to row
-
-    var td = $('<td>'); //make first td
     td.text(data[counter].role); // add name of db
     tr.append(td); // add td to row
 
-    td = $('<td>'); // make second td to hold delete button
-    var btn = $('<button class = "edit" id="' + data[counter].user_id + '">edit</button>');
+    td = $('<td>'); // make second td to hold edit button
+    var btn = '<button class = "edit btn-warning" id="edit_' + data[counter].user_id + '">edit</button>';
     td.append(btn);
     tr.append(td);
 
     td = $('<td>'); // make second td to hold delete button
-    var btn = $('<button class = "delete" id="' + data[counter].user_id + '">delete</button>');
+    var btn = '<button class = "delete btn-danger" id="delete_' + data[counter].user_id + '">delete</button>';
     td.append(btn);
     tr.append(td);
 
     $('.table tbody').append(tr);
   }
+  $('.edit').click(edit_users);
+  $('.delete').click(delete_users);
+
 }
+function edit_users(){
+  console.log('Inside edit_users');
+  console.log($(this));
+  // TODO wire this up to edit php backend
+}
+
+function delete_users(){
+  console.log('Inside delete_users');
+  console.log($(this));
+// TODO wire this up to delete php backend
+}
+
+
+
+
+
 function blow_up(data){
     console.log('oops...');
     console.log(data);
