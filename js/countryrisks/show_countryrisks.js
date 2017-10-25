@@ -1,11 +1,11 @@
 console.log('loaded');
 
-$(document).ready(setup);
+$(document).ready(setup_countryrisks);
 
-function setup(){
+function setup_countryrisks(){
     console.log('Inside setup');
     // need to create file show_countryrisks.php???
-$.get('backend/manage_countryrisks/show_countryrisks.php').done(show_user).fail(blow_up);
+$.get('backend/manage_countryrisks/show_countryrisks.php').done(show_countryrisks).fail(blow_up);
 }
 
 function show_countryrisks(data){
@@ -50,12 +50,12 @@ function show_countryrisks(data){
     tr.append(td);
 
     td = $('<td>'); // make second td to hold edit button
-    var btn = $('<button class = "edit btn-warning" id="' + data[counter].user_id + '">edit</button>');
+    var btn = $('<button class = "edit btn-warning" id="' + data[counter].country_id + '">edit</button>');
     td.append(btn);
     tr.append(td);
 
     td = $('<td>'); // make second td to hold delete button
-    var btn = $('<button class = "delete btn-danger" id="' + data[counter].user_id + '">delete</button>');
+    var btn = $('<button class = "delete btn-danger" id="' + data[counter].country_id + '">delete</button>');
     td.append(btn);
     tr.append(td);
 

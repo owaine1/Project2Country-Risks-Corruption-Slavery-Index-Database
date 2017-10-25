@@ -21,4 +21,3 @@ class DbConnect
     $this->conn = null;
   }
 }
-//$myconnection = new DbConnect('root', 'password');

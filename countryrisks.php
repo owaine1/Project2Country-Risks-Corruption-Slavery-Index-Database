@@ -4,10 +4,11 @@ session_start();
 if (!$_SESSION['logged_in']){
   header("Location:index.php");
 }
- include('partials/head_.php'); ?>
-
-<h1>restricted access</h1>
-<p>should only be able to see this page if you are logged in</p>
+ include('partials/head_countryrisks.php'); ?>
+ <!DOCTYPE html>
+ <html lang="fr">
+<h1 class="panel panel-danger well-lg">***** Restricted Access *****</h1>
+<p>You should only be able to see this page if you are logged in</p>
 <p>contents for to be admin, contributors and partial content for guests</p>
 <table class="table">
   <thead>
@@ -26,3 +27,5 @@ if (!$_SESSION['logged_in']){
 
   </tbody>
 </table>
+<!-- TODO  -->
+</html>
