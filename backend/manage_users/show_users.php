@@ -1,19 +1,18 @@
 <?php
 require_once('../common/connection.php');
 
-$user = new DbConnect($admin, $pass);
+$db = new DbConnect($app_user, $app_pass);
 
-$sql = 'SELECT User FROM mysql.user';
+$stmt = $db->conn->prepare("SELECT * FROM users");
+// $stmt->bindParam(':user_name', $user_name); e.g. of scrubbed parameter to stop sql injection
 
-$result = $user->conn->query($sql);
+$stmt->execute();
 
-if ($result){
-  $output = $result->fetchAll();
-  
-  echo json_encode($output);
-  // do true stuff
-}
-  else {
+  if ($stmt->rowCount() > 0) {
+    logger("rows have been sent back from mysql");
+    $output = $stmt->fetchAll();
+    echo json_encode($output);
+    } else {
     logger($user->conn->error);
     // do false stuff
   }
