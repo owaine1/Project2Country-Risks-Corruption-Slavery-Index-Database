@@ -48,7 +48,7 @@ function show_countryrisks(data){
     var td = $('<td>');
     td.text(data[counter].Social_Protections_Risk_Index_40);
     tr.append(td);
-
+// TODO is it possile (easily to stop edit and delete for guests???)
     td = $('<td>'); // make second td to hold edit button
     var btn = $('<button class = "edit btn-warning" id="' + data[counter].country_id + '">edit</button>');
     td.append(btn);

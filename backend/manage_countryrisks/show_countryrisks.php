@@ -17,3 +17,14 @@ $stmt->execute();
     logger($user->conn->error);
     // do false stuff
   }
+// TODO if user is guest, only allow 10 random records
+// SELECT name
+//   FROM random AS r1 JOIN
+//        (SELECT CEIL(RAND() *
+//                      (SELECT MAX(id)
+//                         FROM random)) AS id)
+//         AS r2
+//  WHERE r1.id >= r2.id
+//  ORDER BY r1.id ASC
+//  LIMIT 1
+// also what's reccommended is https://jan.kneschke.de/projects/mysql/order-by-rand/

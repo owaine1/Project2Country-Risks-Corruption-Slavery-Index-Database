@@ -6,10 +6,10 @@ if (!$_SESSION['logged_in']){
 }
  include('partials/head_countryrisks.php'); ?>
  <!DOCTYPE html>
- <html lang="fr">
+ <html lang="en">
 <h1 class="panel panel-danger well-lg">***** Restricted Access *****</h1>
 <p>You should only be able to see this page if you are logged in</p>
-<p>contents for to be admin, contributors and partial content for guests</p>
+<p>Contents for: admin, contributors and partial content for guests</p>
 <table class="table">
   <thead>
     <tr class="textTop">
@@ -27,5 +27,4 @@ if (!$_SESSION['logged_in']){
 
   </tbody>
 </table>
-<!-- TODO  -->
 </html>
