@@ -40,7 +40,8 @@ function do_logout(){
 function logged_out(){
   console.log('Inside logged_out');
   console.log(data);
-  window.location = 'index.php'; // redirect to homepage
+  // window.location = 'index.php'; // was this
+  document.location.href="index.php"; // redirect to homepage
 
 }
 
