@@ -56,10 +56,6 @@ function delete_users(){
 // TODO wire this up to delete php backend
 }
 
-
-
-
-
 function blow_up(data){
     console.log('oops...');
     console.log(data);

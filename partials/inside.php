@@ -11,7 +11,7 @@
      <li class="active"><a href="index.php">Home</a></li>
      <li class="restrictedAdmin"><a href="users.php">Users</a></li>
      <li class="restrictedAdmin restrictedContrib"><a href="countryrisks.php">Country Risks</a></li>
-     <li class="restrictedAdmin restrictedGuest"><a href="guestcountryrisks.php">Country Risks (guest)</a></li>
+     <li class="restrictedAdmin restrictedGuest"><a href="guestCRs.php">Country Risks (guest)</a></li>
      <li class="restrictedAdmin restrictedContrib"><a href="government.php">Government</a></li>
      <li class="restrictedAdmin restrictedContrib"><a href="corruption.php">Corruption</a></li>
      <li class="restrictedAdmin restrictedGuest"><a href="guestslavery.php">Slavery (guest)</a></li>
