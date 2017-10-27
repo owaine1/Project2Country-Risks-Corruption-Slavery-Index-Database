@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+//FIXME need to marry-up with table. atm the table shown is for admin / contributors
 if (!$_SESSION['logged_in']){
   header("Location:index.php");
 }
@@ -8,7 +8,7 @@ if (!$_SESSION['logged_in']){
 
 <h1>restricted access</h1>
 <p>should only be able to see this page if you are logged in</p>
-<p>contents likely to be users, for admin login</p>
+<p>contents likely to be contributors and admin login, not guests</p>
 
 <h1>restricted access</h1>
 <p>should only be able to see this page if you are logged in</p>

@@ -1,5 +1,6 @@
 <?php
 session_start();
+//TODO need to populate this with a table
 
 if (!$_SESSION['logged_in']){
   header("Location:index.php");

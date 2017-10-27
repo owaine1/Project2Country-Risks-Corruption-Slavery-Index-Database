@@ -5,7 +5,8 @@ $(document).ready(setup);
 function setup() {
   console.log('Inside setup');
   $('#inside').hide();
-  $('#login').click(do_login);
+  $('#login').click(do_login); // TODO to press enter will log in
+  // below right lines but can't get to work https://stackoverflow.com/questions/155188/trigger-a-button-click-with-javascript-on-the-enter-key-in-a-text-box/155263#155263
   $('#logout').click(do_logout);
   $('.restrictedAdmin').hide();
   $('.restrictedContrib').hide();

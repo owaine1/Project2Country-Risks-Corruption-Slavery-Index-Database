@@ -1,10 +1,9 @@
 <?php
 session_start();
-
 if (!$_SESSION['logged_in']){
   header("Location:index.php");
 }
- include('partials/head_countryrisks.php'); ?>
+ include('partials/head_guestcountryrisks.php'); ?>
  <!DOCTYPE html>
  <html lang="en">
 <h1 class="panel panel-danger well-lg">***** Restricted Access *****</h1>
