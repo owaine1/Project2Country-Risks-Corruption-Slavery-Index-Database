@@ -26,7 +26,7 @@ if ($stmt->rowCount() == 1) {
   $_SESSION['logged_in'] = true;
   $_SESSION['role'] = $role['role'];
   logger($_SESSION);
-  echo "logged in";
+  echo json_encode($_SESSION);
 
 }else {
   //logger($db->conn->error);

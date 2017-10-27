@@ -1,6 +1,6 @@
 <?php
 session_start();
-//  TODO filter for admin role only
+//  DONE filter for admin role only
 if (!$_SESSION['logged_in'] || $_SESSION['role'] == 'guest' || 'contributor'){
   header("Location:index.php");
 }

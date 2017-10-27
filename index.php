@@ -1,4 +1,7 @@
-
+<?php
+session_start();
+include('backend/common/logger.php');
+?>
 <!DOCTYPE html>
 <html>
 
