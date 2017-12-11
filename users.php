@@ -14,8 +14,8 @@ if (!$_SESSION['logged_in'] || $_SESSION['role'] == 'guest' || 'contributor'){
 <body class="container">
   <?php include('partials/jumbotron.php'); ?>
   <div id="login_div">
-    <?php include('partials/outside.php'); ?>
-    <?php include('partials/inside.php'); ?>
+    <?php include('partials/outside.php');
+    include('partials/inside.php'); ?>
   </div>
   <div>
     <input id="user_name" class="form-control" type="text">

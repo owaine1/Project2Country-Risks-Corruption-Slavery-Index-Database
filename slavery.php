@@ -4,11 +4,8 @@ session_start();
 if (!$_SESSION['logged_in']){
   header("Location:index.php");
 }
- include('partials/head.php'); ?>
-
-<h1>restricted access</h1>
-<p>should only be able to see this page if you are logged in</p>
-<p>contents likely to be contributors and admin login, not guests</p>
+ include('partials/head_index.php');
+ include('partials/inside.php'); ?>
 
 <h1>restricted access</h1>
 <p>should only be able to see this page if you are logged in</p>

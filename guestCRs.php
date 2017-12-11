@@ -5,8 +5,9 @@ if (!$_SESSION['logged_in']){
 }
  include('partials/head_guestcountryrisks.php'); ?>
  <!DOCTYPE html>
+<!-- TODO maybe better styling frontend, but low prority -->
  <html lang="en">
-<h1 class="panel panel-danger well-lg">***** Restricted Access *****</h1>
+<h1 class="jumbotron">***** Restricted Access *****</h1>
 <p>You should only be able to see this page if you are logged in</p>
 <p>Contents for: admin and partial content for guests</p>
 <table class="table">
